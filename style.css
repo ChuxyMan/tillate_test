@@ -1,0 +1,80 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+#imagescr{
+width: 100%;
+height: auto; 
+}
+.container-header{
+display: flex;
+justify-content: center;
+}
+#innerDiv{
+justify-content: center;
+align-content: center;
+border: 1px solid black;
+text-align: center;
+margin-bottom: 5px;
+}
+
+
+.body{
+display:flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-around;
+padding-top: 5px;
+}
+/*#mybodyrapper{
+    position: absolute;
+}*/
+#btnMore{
+position: fixed;
+z-index:4 ;
+font-weight:bold;
+left: 80%;
+top: 80vh;
+width: 8rem;
+height: 3.4rem; 
+text-emphasis: bold;
+background-color: rgba(191, 250, 186, 0.2);
+border: 3px solid green;
+
+}
+@media only screen and (max-width: 768px){
+    #innerDiv{
+        width: 75%;
+        }
+    .body{
+        background-color:rgba(191, 250, 186, 0.2); 
+    }  
+    #btnMore{
+        position: fixed;
+        z-index:4 ;
+        font-weight:bold;
+        left: 60%;
+        top: 80vh;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .body{
+        background-color: rgba(245, 109, 109, 0.2); 
+    } 
+  
+    #innerDiv{
+        width: 45%;
+        }
+}
+
+
+@media only screen and (min-width: 992px){
+    .body{
+        background-color: rgba(8, 80, 139,0.2); 
+    }  
+
+    #innerDiv{
+        width: 30%;
+        }
+}
